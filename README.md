@@ -13,7 +13,7 @@ This Docker Container can be used to setup your environment for WordPress develo
 So, as an example, here is the whole process of running the custom WordPress PHPCS/PHPCBF container:
 
 ## PHPCS
-```➜ docker run -it -v $(pwd):/app willhallonline/docker-wordpress-phpcs phpcs test.php```
+```➜ docker run -it -v $(pwd):/app willhallonline/wordpress-phpcs phpcs test.php```
 
 ```
 FILE: /app/test.php
@@ -43,7 +43,7 @@ Time: 240ms; Memory: 6Mb
 
 ## PHPCBF
 
-```➜ docker run -it -v $(pwd):/app willhallonline/docker-wordpress-phpcs phpcbf test.php```
+```➜ docker run -it -v $(pwd):/app willhallonline/wordpress-phpcs phpcbf test.php```
 
 ```
 Changing into directory /app
