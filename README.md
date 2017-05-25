@@ -4,18 +4,18 @@ Docker Container with PHPCS setup for WordPress development
 
 This Docker Container can be used to setup your environment for WordPress development. It combines...
 
-PHP
-Composer
-PHP CodeSniffer
-WordPress Coding Standards
-... into a simple to use docker container.
+* PHP
+* Composer
+* PHP CodeSniffer
+* WordPress Coding Standards
+* ... into a simple to use docker container.
 
 So, as an example, here is the whole process of running the custom Drupal PHPCS/PHPCBF container:
 
 ## PHPCS
+```➜ docker run -it -v $(pwd):/app willhallonline/docker-wordpress-phpcs phpcs test.php```
 
-➜ docker run -it -v $(pwd):/app willhallonline/docker-wordpress-phpcs phpcs test.php
-
+```
 FILE: /app/test.php
 ----------------------------------------------------------------------
 FOUND 9 ERRORS AFFECTING 4 LINES
@@ -39,13 +39,16 @@ PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 Time: 240ms; Memory: 6Mb
+```
 
 ## PHPCBF
 
-➜ docker run -it -v $(pwd):/app willhallonline/docker-wordpress-phpcs phpcbf test.php
+```➜ docker run -it -v $(pwd):/app willhallonline/docker-wordpress-phpcs phpcbf test.php```
 
+```
 Changing into directory /app
 Processing test.php [PHP => 39 tokens in 8 lines]... DONE in 89ms (8 fixable violations)
         => Fixing file: 0/8 violations remaining [made 3 passes]... DONE in 222ms
 Patched 1 file
 Time: 1.1 secs; Memory: 6Mb
+```
