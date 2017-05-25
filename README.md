@@ -10,7 +10,7 @@ This Docker Container can be used to setup your environment for WordPress develo
 * WordPress Coding Standards
 * ... into a simple to use docker container.
 
-So, as an example, here is the whole process of running the custom Drupal PHPCS/PHPCBF container:
+So, as an example, here is the whole process of running the custom WordPress PHPCS/PHPCBF container:
 
 ## PHPCS
 ```➜ docker run -it -v $(pwd):/app willhallonline/docker-wordpress-phpcs phpcs test.php```
