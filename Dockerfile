@@ -27,7 +27,7 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV PATH "$PATH:/root/.composer/vendor/bin"
 
 # Install PHPCS
-RUN composer global require squizlabs/php_codesniffer
+RUN composer global require "squizlabs/php_codesniffer=2.9"
 
 # Retrieve WordPress Coding Standards
 git clone -b master https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git /root/wpcs
