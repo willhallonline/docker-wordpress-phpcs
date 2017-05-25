@@ -1,4 +1,4 @@
-# docker-drupal-phpcs
+# docker-wordpress-phpcs
 
 Docker Container with PHPCS setup for WordPress development
 
