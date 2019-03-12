@@ -1,6 +1,7 @@
-# Supported tags and respective ```Dockerfile``` links
-* ```latest```
-* ```alpine```
+## Supported tags and respective ```Dockerfile``` links
+
+* ```latest```, ```alpine``` [Dockerfile](https://github.com/willhallonline/docker-wordpress-phpcs/alpine/blob/master/Dockerfile)
+* ```stretch``` [Dockerfile](https://github.com/willhallonline/docker-wordpress-phpcs/stretch/blob/master/Dockerfile)
 
 **This is a Dockerised Solution for running PHPCS with WordPress Standards**.
 
